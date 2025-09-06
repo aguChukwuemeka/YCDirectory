@@ -1,9 +1,13 @@
-'use client'
+// 'use client'
 
 import React from 'react'
+import Navbar from "@/components/navbar";
 
-export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function Layout({children}: Readonly<{ children: React.ReactNode }>) {
     return (
-        <div>{children}</div>
+        <div>
+            <Navbar/>
+            {children}
+        </div>
     )
 }
